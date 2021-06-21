@@ -96,6 +96,7 @@ class TestAsChord(unittest.TestCase):
 class TestChordFromNoteIndex(unittest.TestCase):
 
     def test_note_1(self):
+        
         chord = Chord.from_note_index(note=1, quality="", scale="Cmaj")
         self.assertEqual(chord, Chord("C"))
 

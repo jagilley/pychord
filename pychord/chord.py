@@ -62,6 +62,7 @@ class Chord(object):
         :param str scale: Base scale (Cmaj, Amin, F#maj, Ebmin, ...)
         :rtype: Chord
         """
+        
         if not 1 <= note <= 8:
             raise ValueError("Invalid note {}".format(note))
         relative_key = RELATIVE_KEY_DICT[scale[-3:]][note - 1]
