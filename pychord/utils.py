@@ -2,6 +2,9 @@
 
 from .constants import NOTE_VAL_DICT, SCALE_VAL_DICT
 
+def roman_numeral_parser(string):
+    pass
+
 
 def note_to_val(note):
     """ Convert note to int
